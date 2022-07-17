@@ -18,22 +18,12 @@ fun main() {
         .forEach { println(it) }
 
     println("-----------------------")
-    Funcionarios
+     Funcionarios
         .groupBy { it.tipoContratacao }
         .forEach { println(it) }
 
 }
 
-data class Funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContratacao: String
 
-) {
-    override fun toString(): String =
-        """
-            nome:   $nome
-            salario: $salario
-        """.trimIndent()
 
-}
+
